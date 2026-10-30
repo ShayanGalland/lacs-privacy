@@ -47,13 +47,17 @@
 <body>
 
   <h1>Politique de confidentialité — Application L.A.C.S</h1>
-  <p class="updated"><strong>Dernière mise à jour : 23 octobre 2026</strong></p>
+  <p class="updated"><strong>Dernière mise à jour : 30 octobre 2026</strong></p>
 
   <h2>1. Introduction</h2>
   <p>L'application <strong>L.A.C.S</strong> (« l'Application ») est un outil interne
     de gestion de chantiers édité par <strong>L'Air Conditionné Service
     (L.A.C.S)</strong> (« nous », « notre entreprise »). Elle est réservée aux
     membres des équipes de l'entreprise.</p>
+  <p>L'Application est disponible sur Android, sur iPhone et dans un
+    navigateur web, à l'adresse <strong>lacs-2025.web.app</strong> (« la
+    version web »), avec les mêmes comptes et les mêmes données. Sauf mention
+    contraire, la présente politique s'applique à toutes ces versions.</p>
   <p>Les comptes sont créés par l'encadrement de l'entreprise (chef ou chef
     adjoint) : il n'y a pas d'inscription libre dans l'Application.</p>
   <p>La présente politique de confidentialité explique quelles données
@@ -93,11 +97,15 @@ Contact : lacsnoreply@gmail.com</p>
     <li>Messages, textes, réactions et commentaires échangés dans les
       discussions de chantiers, ainsi que les GIF et images que vous y
       insérez</li>
-    <li>Photos, vidéos et documents partagés dans les chantiers</li>
-    <li>Tâches créées, assignées et leur statut</li>
+    <li>Photos, vidéos et documents partagés dans les chantiers, y compris
+      les photos que vous annotez ou sur lesquelles vous dessinez</li>
+    <li>Tâches créées, assignées et leur statut, avec leurs photos et vidéos
+      (dont celles du travail réalisé)</li>
     <li>Événements du calendrier des chantiers (rendez-vous, réunions,
-      livraisons…) : titre, type, date et heure, note, participants que vous
-      désignez, rappel choisi, auteur</li>
+      livraisons…) : titre, date et heure, note, participants que vous
+      désignez, rappel choisi, auteur (et type, pour les événements créés
+      avant la version 1.3) ; une carte de l'événement est publiée dans la
+      discussion du chantier</li>
     <li>Données de pointage et d'heures travaillées : horaires d'arrivée et de
       départ tels qu'indiqués par votre téléphone, heure à laquelle nos
       serveurs les ont reçus (un écart important entre les deux est signalé à
@@ -135,18 +143,27 @@ Contact : lacsnoreply@gmail.com</p>
   <p><strong>Données techniques</strong></p>
   <ul>
     <li>Identifiants de notification (jetons Firebase Cloud Messaging) permettant
-      l'envoi de notifications</li>
+      l'envoi de notifications, sur téléphone seulement : la version web
+      n'envoie pas de notifications</li>
     <li>Données d'activité minimales nécessaires au fonctionnement (par exemple,
       horodatage de dernière activité pour l'affichage de la présence)</li>
-    <li>Données de diagnostic en cas de plantage ou d'erreur de l'Application
-      (service Firebase Crashlytics) : modèle et système de l'appareil,
-      version de l'Application, description technique de l'erreur, date, et
-      identifiant technique de votre compte. Ces rapports ne contiennent ni
-      votre adresse e-mail, ni votre nom, ni le contenu de vos messages.</li>
+    <li>Sur Android et iPhone, données de diagnostic en cas de plantage ou
+      d'erreur de l'Application (service Firebase Crashlytics) : modèle et
+      système de l'appareil, version de l'Application, description technique
+      de l'erreur, date, et identifiant technique de votre compte. Ces rapports
+      ne contiennent ni votre adresse e-mail, ni votre nom, ni le contenu de vos
+      messages. La version web n'envoie aucun rapport de ce type.</li>
     <li>Recherche de GIF : lorsque vous ouvrez le sélecteur de GIF, les mots
       que vous y saisissez et des informations techniques (adresse IP, type
       d'appareil) sont transmis au service GIPHY, depuis lequel les GIF sont
-      chargés.</li>
+      chargés. Le sélecteur de GIF n'est pas proposé dans la version web.</li>
+    <li>Dans la version web : votre navigateur conserve votre session de
+      connexion — jusqu'à la fermeture de l'onglet, ou durablement si vous
+      cochez « Se souvenir de moi » — ainsi que vos réglages d'affichage
+      (langue, thème, taille du texte). La version web n'utilise aucun cookie
+      publicitaire ni outil de mesure d'audience. Comme pour tout site web,
+      les serveurs qui l'hébergent reçoivent l'adresse IP et des informations
+      techniques sur votre navigateur.</li>
   </ul>
 
   <p><strong>Accès à votre appareil</strong></p>
@@ -154,7 +171,12 @@ Contact : lacsnoreply@gmail.com</p>
     <li>Appareil photo, microphone et photos : uniquement quand vous prenez ou
       choisissez vous-même une photo, une vidéo ou un document à partager, ou
       quand vous enregistrez un média dans votre galerie</li>
-    <li>Notifications : avec votre accord, demandé après la connexion</li>
+    <li>Notifications : avec votre accord, demandé après la connexion (sur
+      téléphone)</li>
+    <li>Dans la version web, l'Application n'accède qu'aux fichiers que vous
+      choisissez ou déposez vous-même ; ce que vous enregistrez va dans le
+      dossier de téléchargement de votre navigateur. Le pointage n'est pas
+      disponible dans la version web.</li>
   </ul>
 
   <h2>4. Finalités du traitement</h2>
@@ -211,7 +233,11 @@ Contact : lacsnoreply@gmail.com</p>
     des notifications et le diagnostic des pannes (Firebase Crashlytics), ainsi
     que sur <strong>Google Maps Platform (Places)</strong> pour la recherche
     d'adresses de chantiers. Sur iPhone, les notifications transitent par le
-    service de notification d'<strong>Apple</strong>.</p>
+    service de notification d'<strong>Apple</strong>. Le site de la version
+    web est servi par <strong>Firebase Hosting</strong> (Google) ; votre
+    navigateur charge aussi depuis les serveurs de Google les composants
+    techniques du site (moteur d'affichage, bibliothèques Firebase et polices
+    de caractères), ce qui leur communique votre adresse IP.</p>
   <p>Ces prestataires agissent en qualité de sous-traitants et hébergent les
     données sur des serveurs sécurisés. Google s'engage au respect du RGPD dans le
     cadre de ses conditions de traitement des données.</p>
@@ -274,6 +300,9 @@ Contact : lacsnoreply@gmail.com</p>
       qui ont accès à ce chantier</li>
     <li>Sur Android, les données de l'Application sont exclues des sauvegardes
       automatiques du téléphone</li>
+    <li>Dans la version web, sans « Se souvenir de moi », la session se ferme
+      à la fermeture de l'onglet ; sur un ordinateur partagé, laissez cette
+      case décochée et déconnectez-vous après usage</li>
   </ul>
 
   <h2>9. Vos droits</h2>
